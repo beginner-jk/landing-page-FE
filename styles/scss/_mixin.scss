@@ -1,0 +1,142 @@
+@mixin font-module($size, $weight:500, $height:16px, $color:black) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin border-module($pixel, $color, $radius:false) {
+  border: $pixel solid $color;
+  @if ($radius) {
+    border-radius: $radius;
+  }
+}
+
+@mixin focus-outline {
+  outline: 2px solid #015ECC;
+  z-index: 10;
+}
+
+@mixin image-loading ($image-width, $image-height, $cordination-x, $cordination-y){ 
+  display: inline-block;
+  width: $image-width;
+  height: $image-height;
+  border: none;
+  background: url('../../images/image.png') $cordination-x $cordination-y no-repeat;
+}
+
+@mixin triangle ($size, $color, $direction) {
+  width: 0;
+  height: 0;
+  
+  border: $size solid transparent;
+  @if $direction == up {
+    border-bottom-color: $color;
+  } @else if $direction == right {
+    border-left-color: $color;
+  } @else if $direction == down {
+    border-top-color: $color
+  } @else if $direction == left {
+    border-right-color: $color;
+  }
+}
+
+@mixin info-icon ($width, $height, $top, $left) {
+  width: $width;
+  height: $height;
+  position: absolute;
+  top: $top;
+  left: $left;
+  background: url(../../images/icons/icon-info.svg) no-repeat;
+  background-size: $width $height;
+}
+
+@mixin balloon-box {
+  width: 220px;
+  position: absolute;
+  left: 120px;
+  top: 0;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px 0 #0000004d;
+  border: solid 1px $gray-font;
+  font-size: $size-12;
+  background-color: #ffffffeb;
+  z-index: 10;
+}
+
+@mixin info-btn {
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 18px 16px;
+  color: $dark-gray-font;
+  font-size: $size-14;
+  border-top: 1px solid $line-division;
+}
+
+@mixin table-style($fontColor) {
+  width: 209px;
+  padding: 12px 16px;
+  text-align: left;
+  color: $fontColor;
+  border-top: 1px solid $line-division;
+}
+
+@mixin move-btn($bottom) {
+  position: fixed;
+  bottom: $bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: calc(45% - 558px);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  background-color: $bg-white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  opacity: .9;
+}
+
+@mixin contentSize {
+  width: 1056px;
+  margin: 0 auto;
+  font-size: $size-12;
+}
+
+@mixin font-overflow($color) {
+  display: block;
+  color: $color;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin artist-img($width, $hight, $bgsize) {
+    width: $width;
+    height: $hight;
+    border-radius: 50%;
+    background: url('../../images/image/artist-img.jpg') no-repeat center;
+    background-size: $bgsize;
+}
+
+@mixin rating-star($width, $fontsize) {
+  display: inline-block;
+  width: $width;
+  font-size: $fontsize;
+  color: #ffc500;
+}
+
+@mixin follow-btn($color, $bgcolor, $bor-color) {
+  display: inline-block;
+  width: 47%;
+  padding: 7px 24px;
+  font-size: $size-14;
+  color: $color;
+  background-color: $bgcolor;
+  border: 1px solid $bor-color;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}

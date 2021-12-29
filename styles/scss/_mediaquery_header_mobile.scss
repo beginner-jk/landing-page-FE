@@ -1,0 +1,26 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+  
+  .nav {
+    padding: 24px 20px;
+    height: 76px;
+    .toggle-wrap {
+      display: inline-block;
+      .toggle-icon {
+        i {
+          font-size: 32px;
+        }
+      }
+    }
+    .logo {
+      width: 92px;
+      height: 28px;
+    }
+    .nav__ul {
+      display: none;
+    }
+  }
+}

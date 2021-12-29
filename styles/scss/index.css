@@ -1,0 +1,45 @@
+body {
+  font-size: 16px;
+  font-family: 'Spoqa Han Sans Neo';
+  line-height: 20px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 102px;
+  background-color: #F2E9D8;
+  padding: 31px 320px;
+}
+
+.nav .logo {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+}
+
+.nav .nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav__ul .nav__li {
+  margin-left: 30px;
+}
+
+.nav .nav__ul .nav__li.active {
+  padding: 15px 30px;
+  background-color: #D97652;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 40px;
+}
+/*# sourceMappingURL=index.css.map */

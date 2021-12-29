@@ -1,0 +1,48 @@
+// common
+body {
+  position: relative;
+  font-size: 16px;
+  font-family: 'Spoqa Han Sans Neo';
+  line-height: 20px;
+}
+
+.nav {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 102px;
+  background-color: #F2E9D8;
+  padding: 31px 320px;
+  .logo {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+  }
+  .toggle-wrap {
+    display: none;
+    #toggle {
+      display: none;
+    }
+  }
+  .nav__ul {
+    display: flex;
+    align-items: center;
+    .nav__li {
+      margin-left: 30px;
+      &.active {
+        padding: 15px 30px;
+        background-color: #D97652;
+        font-weight: bold;
+        border-radius: 40px;
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/scss/download.css">
+  <script defer src="https://kit.fontawesome.com/fa4967e6b9.js" crossorigin="anonymous"></script>
+  <script defer src="./js/main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="nav">
+    <h1 class="text-hide">홈페이지 네비게이션</h1>
+    <a href="#">
+      <img src="./img/logo.svg" alt="로고" class="logo">
+    </a>
+    <div class="toggle-wrap">
+      <label for="toggle" class="toggle-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="toggle">
+    </div>
+    <ul class="nav__ul">
+      <li class="nav__li"><a href="#">Home</a></li>
+      <li class="nav__li"><a href="#">About</a></li>
+      <li class="nav__li"><a href="#">Support</a></li>
+      <li class="nav__li active"><a href="#">Download</a></li>
+    </ul>
+  </header>
+
+  <main class="download-page">
+    <h1 class="text-hide">다운로드 페이지</h1>
+
+    <section class="download-app">
+      <div class="content-wrap">
+        <h2 class="title">
+          <div class="title__web">
+            <p>Lorem Ipsum is simply</p>
+            <p>dummy text of the printing and</p>
+          </div>
+          <div class="title__mobile">
+            <p>Lorem Ipsum is simply</p>
+            <p>dummy text</p>
+            <p>of the printing and</p>
+          </div>
+        </h2>
+        <div class="description">
+          <div class="description__web">
+            <p>Lorem Ipsum is simply dummy text of the printing and</p>
+            <p>typesetting industry.</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            <p>ever since the 1500s, when an unknown</p>
+          </div>
+          <div class="description__mobile">
+            <p>Lorem Ipsum is simply dummy text</p>
+            <p>of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum has been the industry's</p>
+            <p>standard dummy text ever since the 1500s,</p>
+            <p> when an unknown</p>
+          </div>
+        </div>
+        <button class="download-btn">
+          <a href="#none" target="_blank">Download</a>
+        </button>
+      </div>
+      <img src="./img/box-cat.png" alt="박스 고양이" class="img">
+    </section>
+
+    <section class="intro">
+      <h2 class="text-hide">인트로 파트</h2>
+
+      <section class="intro__line-1">
+        <h3 class="text-hide">인트로 파트 line 1</h3>
+        <div class="img-cont">
+          <img src="./img/img_4.jpg" alt="메인 고양이" class="img-line-1">
+        </div>
+        <div class="content">
+          <h4 class="title">
+            <p>Lorem Ipsum is simply</p>
+            <p>dummy text of the printing</p>
+            <p>and dummy text</p>
+          </h4>
+          <p class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+        </div>
+      </section>
+
+      <section class="intro__line-2">
+        <h3 class="title">dummy text of the printing and dummy</h3>
+        <div class="content">
+          <p>Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+        </div>
+        <div class="images-wrap">
+          <img src="./img/img_1.jpg" alt="고양이 1" class="image">
+          <img src="./img/img_2.jpg" alt="고양이 2" class="image">
+          <img src="./img/img_3.jpg" alt="고양이 3" class="image">
+        </div>
+        <div class="learn-more">
+          <div class="content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            <p>Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <button class="more-btn">
+            <a href="#none">Learn More</a>
+          </button>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="subscribe-part">
+      <h3 class="text-hide">구독</h3>
+      <div class="content">
+        <strong>Subscribe to our Blog post</strong>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum has been the industry's standard dummy text</p>
+      </div>
+      <form class="subscribe-form">
+        <label for="subscribe-input" class="text-hide">메일 입력창</label>
+        <input type="text" placeholder="Enter your e-mail address" id="subscribe-input">
+        <button type="submit" class="subscribe-btn">
+          <a href="#">Subscribe</a>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- <button class="top-btn">
+    <img src="./img/top-btn.svg" alt="탑 버튼" class="top-btn-img">
+  </button> -->
+
+  <footer class="footer">
+    <h1 class="text-hide">홈페이지 정보</h1>
+    <section class="footer__line-1">
+      <h2 class="text-hide">홈페이지 정보 line 1</h2>
+      <div class="img-cont">
+        <img src="./img/img_5.jpg" alt="배경 고양이" class="bg-img">
+      </div>
+    </section>
+    <section class="footer__line-2">
+      <h2 class="text-hide">홈페이지 정보 line 2</h2>
+      <div class="row-1">
+        <a href="#">
+          <img src="./img/logo.svg" alt="로고" class="logo">
+        </a>
+        <ul class="sns-list">
+          <li class="sns"><a href="#"><img src="./img/blog.svg" alt="블로그"></a></li>
+          <li class="sns"><a href="#"><img src="./img/insta.svg" alt="인스타"></a></li>
+          <li class="sns"><a href="#"><img src="./img/facebook.svg" alt="페이스북"></a></li>
+          <li class="sns"><a href="#"><img src="./img/youtube.svg" alt="유튜브"></a></li>
+        </ul>
+      </div>
+      <div class="row-2">
+        <ul class="more-menu">
+          <li class="list"><a href="#" target="_blank">More</a></li>
+          <li class="list"><a href="#" target="_blank">Blog</a></li>
+          <li class="list"><a href="#" target="_blank">Support</a></li>
+          <li class="list"><a href="#" target="_blank">Terms of Use</a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>

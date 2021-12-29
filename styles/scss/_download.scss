@@ -1,0 +1,193 @@
+.download-page {
+  position: relative;
+  .download-app {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 900px;
+    background-color: #F2E9D8;
+    padding: 0 320px;
+    padding-top: 134px;
+    .content-wrap {
+      padding-top: 168px;
+      .title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60.1px;
+        margin-bottom: 40px;
+        .title__mobile {
+          display: none;
+        }
+      }
+      .description {
+        margin-bottom: 40px;
+        .description__mobile {
+          display: none;
+        }
+      }
+      .download-btn {
+        padding: 15px 30px;
+        background-color: #D97652;
+        font-weight: bold;
+        border-radius: 40px;
+        font-size: 16px;
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .intro {
+    padding: 80px 320px 0;
+    .intro__line-1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 120px;
+
+      .img-cont {
+        .img-line-1 {
+          width: 660px;
+          height: 390px;
+          object-fit: cover;
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+          border-radius: 30px;
+        }
+      }
+
+      .content {
+        .title {
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 45px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .intro__line-2 {
+      text-align: center;
+      .title {
+        color: #D97652;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 40px;
+      }
+
+      .content {
+        strong {
+          color: #D97652;
+        }
+        margin-bottom: 88px;
+      }
+
+      .images-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+        .image {
+          width: 378px;
+          height: 378px;
+          object-fit: cover;
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+          border-radius: 30px;
+        }
+      }
+
+      .learn-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 196px;
+        .content {
+          display: inline-block;
+          text-align: left;
+          margin-right: 52px;
+          margin-bottom: 0;
+        }
+        .more-btn {
+          display: inline-block;
+          padding: 15px 30px;
+          background-color: #D97652;
+          font-weight: bold;
+          border-radius: 40px;
+          font-size: 16px;
+          a {
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe-part {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -300px;
+    z-index: 10;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 320px;
+    background-color: #263140;
+    color: #FFFFFF;
+    padding: 50px 58px;
+    border-radius: 30px;
+    .content {
+      strong {
+        display: block;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    .subscribe-form {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 19px;
+        left: 30px;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        content: "\f0e0";
+        font-weight: 400;
+        color : #767676;
+        font-size: 16px;
+      }
+      #subscribe-input {
+        width: 530px;
+        height: 60px;
+        border-radius: 60px;
+        padding: 0;
+        padding-left: 68px;
+        &::placeholder {
+          color : #767676;
+          font-size: 16px;
+        }
+      }
+    }
+    .subscribe-btn {
+      position: absolute;
+      top: 5px;
+      right: 6px;
+      padding: 15px 30px;
+      background-color: #D97652;
+      font-weight: bold;
+      border-radius: 40px;
+      font-size: 16px;
+      line-height: 20px;
+      a {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

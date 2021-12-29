@@ -1,0 +1,175 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .download-page {
+    position: relative;
+    .download-app {
+      text-align: center;
+      display: block;
+      height: 800px;
+      padding: 0;
+      padding-top: 0;
+      .content-wrap {
+        padding-top: 116px;
+        .title {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 30px;
+          .title__mobile {
+            display: block;
+          }
+          .title__web {
+            display: none;
+          }
+        }
+        .description {
+          margin-bottom: 30px;
+          .description__mobile {
+            display: block;
+          }
+          .description__web {
+            display: none;
+          }
+        }
+        .download-btn {
+          padding: 11px 24px;
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 30px;
+        }
+      }
+      .img {
+        width: 197px;
+      }
+    }
+
+    .intro {
+      padding: 32px 32px 0;
+      .intro__line-1 {
+        display: block;
+        margin-bottom: 60px;
+  
+        .img-cont {
+          .img-line-1 {
+            width: 326px;
+            height: 190px;
+            border-radius: 18px;
+          }
+          margin-bottom: 40px;
+        }
+  
+        .content {
+          .title {
+            font-size: 24px;
+            line-height: 30.5px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .intro__line-2 {
+        text-align: center;
+        .title {
+          color: #D97652;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
+
+        .content {
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 40px;
+          strong {
+            color: #D97652;
+          }
+        }
+
+        .images-wrap {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 60px;
+          overflow: hidden;
+          .image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 18px;
+            margin-right: 10px;
+          }
+        }
+
+        .learn-more {
+          display: block;
+          margin-bottom: 330px;
+          .content {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 30px;
+            margin-right: 0;
+          }
+          .more-btn {
+            float: right;
+            padding: 11px 24px;
+            font-size: 14px;
+            line-height: 18px;
+          }
+          &::after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+        }
+      }
+    }
+  
+    .subscribe-part {
+      margin: 0 32px;
+      bottom: -410px;
+      display: block;
+      padding: 36px 32px 30px;
+      border-radius: 18px;
+      .content {
+        strong {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 20px;
+          margin-right: 68px;
+        }
+        p {
+          line-height: 17.5px;
+        }
+        margin-bottom: 30px;
+      }
+      .subscribe-form {
+        &::before {
+          top: 13px;
+          left: 15px;
+          font-size: 14px;
+        }
+        #subscribe-input {
+          width: 262px;
+          height: 40px;
+          border-radius: 60px;
+          padding: 0;
+          padding-left: 40px;
+          margin-bottom: 20px;
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+      .subscribe-btn {
+        display: block;
+        position: static;
+        float: right;
+        padding: 11px 24px;
+        font-size: 14px;
+        line-height: 18px;
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
