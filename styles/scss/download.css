@@ -63,6 +63,10 @@ body {
   color: #FFFFFF;
 }
 
+.footer {
+  min-width: 1820px;
+}
+
 .footer .footer__line-1 {
   background: #F2E9D8;
 }
@@ -117,6 +121,12 @@ body {
 
 .download-page {
   position: relative;
+}
+
+.download-page section {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  min-width: 1180px;
 }
 
 .download-page .download-app {
@@ -276,12 +286,13 @@ body {
 }
 
 .download-page .subscribe-part {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   left: 0;
   right: 0;
   bottom: -300px;
   z-index: 10;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,6 +486,9 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    min-width: 0;
+  }
   .footer .footer__line-1 .img-cont {
     height: 240px;
   }
@@ -553,6 +567,9 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .download-page {
     position: relative;
+  }
+  .download-page section {
+    min-width: 0;
   }
   .download-page .download-app {
     text-align: center;

@@ -1,5 +1,9 @@
 .download-page {
   position: relative;
+  section {
+    box-sizing: content-box;
+    min-width: 1180px;
+  }
   .download-app {
     display: flex;
     justify-content: space-between;
@@ -123,12 +127,12 @@
   }
 
   .subscribe-part {
+    box-sizing: border-box;
     position: absolute;
     left: 0;
     right: 0;
     bottom: -300px;
     z-index: 10;
-    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;

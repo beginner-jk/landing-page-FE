@@ -1,5 +1,8 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .download-page {
+    section {
+      min-width: 0;
+    }
     position: relative;
     .download-app {
       text-align: center;
