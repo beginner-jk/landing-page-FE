@@ -2,7 +2,7 @@
 const topBtn = document.querySelector('.top-btn');
 
 topBtn.addEventListener('click', (e) => {
-  window.scrollTo({ top:0, left:0, behavior:'smooth' });
+  window.scrollTo({ top:0, behavior:'smooth' });
 });
 
 // navbar button

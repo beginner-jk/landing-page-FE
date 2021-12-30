@@ -49,17 +49,23 @@ body {
 }
 
 .nav .nav__ul .nav__li {
-  margin-left: 30px;
-}
-
-.nav .nav__ul .nav__li.active {
+  cursor: pointer;
   padding: 15px 30px;
-  background-color: #D97652;
-  font-weight: bold;
   border-radius: 40px;
 }
 
-.nav .nav__ul .nav__li.active a {
+.nav .nav__ul .nav__li a::after {
+  display: block;
+  content: attr(data-text);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav .nav__ul .nav__li.active {
+  background-color: #D97652;
+  font-weight: bold;
   color: #FFFFFF;
 }
 
